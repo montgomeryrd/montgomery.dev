@@ -1,43 +1,50 @@
 import { useEffect, useState } from 'react';
 
-import BauhausHome from '../css-components/Bauhaus/BauhausHome';
+import Bauhaus from '../css-components/Bauhaus/Bauhaus';
 import '../css-components/Bauhaus/Bauhaus.css';
-import OnWhiteHome from '../css-components/OnWhite/OnWhiteHome';
-import ColorlessHome from '../css-components/OnWhite/OnWhiteHome';
-import GlassmorphismHome from '../css-components/Glassmorphism/GlassmorphismHome';
-import DarkModeHome from '../css-components/DarkMode/DarkModeHome';
-import ImmersiveHome from '../css-components/Immersive/ImmersiveHome';
-import BigBoldHome from '../css-components/BigBold/BigBoldHome';
-import ThreeDHome from '../css-components/ThreeD/ThreeDHome';
+import OnWhite from '../css-components/OnWhite/OnWhite';
+import '../css-components/OnWhite/OnWhite.css';
+import Colorless from '../css-components/Colorless/Colorless';
+import '../css-components/Colorless/Colorless.css';
+import Glassmorphism from '../css-components/Glassmorphism/Glassmorphism';
+import '../css-components/Glassmorphism/Glassmorphism.css';
+import DarkMode from '../css-components/DarkMode/DarkMode';
+import '../css-components/DarkMode/DarkMode.css';
+import Immersive from '../css-components/Immersive/Immersive';
+import '../css-components/Immersive/Immersive.css';
+import BigBold from '../css-components/BigBold/BigBold';
+import '../css-components/BigBold/BigBold.css';
+import ThreeD from '../css-components/ThreeD/ThreeD';
+import '../css-components/ThreeD/ThreeD.css';
 
 const Home = ({ theme }) => {
-    const [page, setPage] = useState(<BauhausHome />);
+    const [page, setPage] = useState('');
 
     useEffect(() => {
         switch(theme) {
             case 'bauhaus':
-                setPage(<BauhausHome />);
+                setPage(<Bauhaus />);
                 return;
             case 'on-white':
-                setPage(<OnWhiteHome />);
+                setPage(<OnWhite />);
                 return;
             case 'colorless':
-                setPage(<ColorlessHome />);
+                setPage(<Colorless />);
                 return;
             case 'glassmorphism':
-                setPage(<GlassmorphismHome />);
+                setPage(<Glassmorphism />);
                 return;
             case 'dark-mode':
-                setPage(<DarkModeHome />);
+                setPage(<DarkMode />);
                 return;
             case 'immersive':
-                setPage(<ImmersiveHome />);
+                setPage(<Immersive />);
                 return;
             case 'big-bold':
-                setPage(<BigBoldHome />);
+                setPage(<BigBold />);
                 return;
             case '3d-elements':
-                setPage(<ThreeDHome />);
+                setPage(<ThreeD />);
                 return;
             default: break;
         }
@@ -64,7 +71,7 @@ const Home = ({ theme }) => {
                     <a href="https://www.linkedin.com/in/montgomeryrd/" target="_blank" rel="noreferrer">
                         <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://twitter.com/richard04755318" target="_blank" rel="noreferrer">
+                    <a href="https://twitter.com/ReallyGreenCode" target="_blank" rel="noreferrer">
                         <i className="fab fa-twitter"></i>
                     </a>
                 </section>

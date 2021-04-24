@@ -3,7 +3,7 @@ import '../css-components/Bauhaus/Bauhaus.css';
 const StyleFilter = ({ theme, setTheme}) => {
 
     return (
-        <nav className={theme}>
+        <nav id="style-filter" className={theme}>
             <ul>
                 <li onClick={() => {setTheme('bauhaus')}}>
                     <span>Bauhaus</span>

@@ -8,7 +8,7 @@ import Home from './screens/Home';
 import './App.css';
 
 function App() {
-	const [theme, setTheme] = useState('bauhaus');
+	const [theme, setTheme] = useState('colorless');
 
 	return (
 		<div className="App">
