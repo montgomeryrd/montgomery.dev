@@ -1,0 +1,82 @@
+/* Home Page */
+.colorless {
+    position: relative;
+    display: grid;
+    place-content: center;
+}
+
+.colorless .home-jumbotron {
+    position: relative;
+    font-family: var(--poppins);
+}
+
+
+.colorless .home-jumbotron .home-information h1 {
+    font-family: var(--antonio);
+    font-size: 60px;
+    padding: 30px 0;
+}
+
+.colorless .home-jumbotron .home-information h2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.colorless .home-jumbotron .home-information h3 {
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.colorless .home-jumbotron .home-information a {
+    text-decoration: none;
+    line-height: 2.2em;
+    color: black;
+}
+
+.colorless .home-jumbotron .home-information a .home-location-1 i {
+    
+}
+
+.colorless .home-jumbotron .home-information a .home-location-1 {
+    display: flex;
+    font-size: 1.2em;
+}
+
+.colorless .home-jumbotron .home-information a .home-location-2 {
+    font-size: 3em;
+}
+
+.colorless .home-jumbotron .home-contact-links {
+
+}
+
+.colorless .home-jumbotron .home-contact-links a {
+    font-size: 3em;
+    padding: 10px;
+    color: black;
+}
+
+.colorless .home-jumbotron .tech-stack-container {    
+    
+}
+
+.colorless .home-jumbotron .tech-stack-container .title {
+    font-size: 2.4em;
+}
+
+.colorless .home-jumbotron .tech-stack-container .stack {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.colorless .home-jumbotron .tech-stack-container .stack .item:nth-child(1),
+.colorless .home-jumbotron .tech-stack-container .stack .item:nth-child(2),
+.colorless .home-jumbotron .tech-stack-container .stack .item:nth-child(3) {
+ 
+}
+ 
+.colorless .home-jumbotron .tech-stack-container .stack .item {
+    font-size: 1.1em;
+}

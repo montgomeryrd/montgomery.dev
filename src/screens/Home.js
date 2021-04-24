@@ -43,7 +43,7 @@ const Home = ({ theme }) => {
             case 'big-bold':
                 setPage(<BigBold />);
                 return;
-            case '3d-elements':
+            case 'three-d-elements':
                 setPage(<ThreeD />);
                 return;
             default: break;
@@ -82,12 +82,12 @@ const Home = ({ theme }) => {
                         <span className="item">HTML5</span>
                         <span className="item">CSS3</span>
                         <span className="item">JavaScript</span>
+                        <span className="item">NodeJS</span>
+                        <span className="item">MongoDB</span>
+                        <span className="item">React</span>
+                        <span className="item">Firebase</span>
                         <span className="item">SASS</span>
                         <span className="item">Github</span>
-                        <span className="item">NodeJS</span>
-                        <span className="item">React</span>
-                        <span className="item">MongoDB</span>
-                        <span className="item">Firebase</span>
                     </div>
                 </section>
             </section>

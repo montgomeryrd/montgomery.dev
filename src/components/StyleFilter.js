@@ -26,7 +26,7 @@ const StyleFilter = ({ theme, setTheme}) => {
                 <li onClick={() => {setTheme('big-bold')}}>
                     <span>Big Bold Typography</span>
                 </li>
-                <li onClick={() => {setTheme('3d-elements')}}>
+                <li onClick={() => {setTheme('three-d-elements')}}>
                     <span>3D Elements</span>
                 </li>
             </ul>
