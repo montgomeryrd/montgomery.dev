@@ -3,18 +3,28 @@
     position: relative;
     display: grid;
     place-content: center;
+    background: black;
 }
 
 .colorless .home-jumbotron {
     position: relative;
+    display: grid;
+    place-content: center;
     font-family: var(--poppins);
+    background: white;
+    width: 80vw;
+    height: 100vh;
 }
 
-
 .colorless .home-jumbotron .home-information h1 {
+    position: absolute;
+    left: 10vw;
+    width: 230px;
     font-family: var(--antonio);
     font-size: 60px;
-    padding: 30px 0;
+    padding: 60px 20px;
+    text-align: center;
+    border: 1px solid red;
 }
 
 .colorless .home-jumbotron .home-information h2 {
