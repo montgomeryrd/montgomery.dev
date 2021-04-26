@@ -1,51 +1,7 @@
-import { useEffect, useState } from 'react';
-
-import BauhausHome from '../css-components/Bauhaus/BauhausHome';
-import '../css-components/Bauhaus/Bauhaus.css';
-import OnWhiteHome from '../css-components/OnWhite/OnWhiteHome';
-import ColorlessHome from '../css-components/OnWhite/OnWhiteHome';
-import GlassmorphismHome from '../css-components/Glassmorphism/GlassmorphismHome';
-import DarkModeHome from '../css-components/DarkMode/DarkModeHome';
-import ImmersiveHome from '../css-components/Immersive/ImmersiveHome';
-import BigBoldHome from '../css-components/BigBold/BigBoldHome';
-import ThreeDHome from '../css-components/ThreeD/ThreeDHome';
-
 const Home = ({ theme }) => {
-    const [page, setPage] = useState(<BauhausHome />);
-
-    useEffect(() => {
-        switch(theme) {
-            case 'bauhaus':
-                setPage(<BauhausHome />);
-                return;
-            case 'on-white':
-                setPage(<OnWhiteHome />);
-                return;
-            case 'colorless':
-                setPage(<ColorlessHome />);
-                return;
-            case 'glassmorphism':
-                setPage(<GlassmorphismHome />);
-                return;
-            case 'dark-mode':
-                setPage(<DarkModeHome />);
-                return;
-            case 'immersive':
-                setPage(<ImmersiveHome />);
-                return;
-            case 'big-bold':
-                setPage(<BigBoldHome />);
-                return;
-            case '3d-elements':
-                setPage(<ThreeDHome />);
-                return;
-            default: break;
-        }
-    }, [theme]);
 
     return (
-        <main id="home-container" className={theme} role="main">
-            {page}
+        <main id="home-container" className={`${theme}-home`} role="main">
             <section className="home-jumbotron">
                 <section className="home-information">
                     <h1>Richard Montgomery</h1>
@@ -64,7 +20,7 @@ const Home = ({ theme }) => {
                     <a href="https://www.linkedin.com/in/montgomeryrd/" target="_blank" rel="noreferrer">
                         <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://twitter.com/richard04755318" target="_blank" rel="noreferrer">
+                    <a href="https://twitter.com/ReallyGreenCode" target="_blank" rel="noreferrer">
                         <i className="fab fa-twitter"></i>
                     </a>
                 </section>
@@ -75,12 +31,12 @@ const Home = ({ theme }) => {
                         <span className="item">HTML5</span>
                         <span className="item">CSS3</span>
                         <span className="item">JavaScript</span>
+                        <span className="item">NodeJS</span>
+                        <span className="item">MongoDB</span>
+                        <span className="item">React</span>
+                        <span className="item">Firebase</span>
                         <span className="item">SASS</span>
                         <span className="item">Github</span>
-                        <span className="item">NodeJS</span>
-                        <span className="item">React</span>
-                        <span className="item">MongoDB</span>
-                        <span className="item">Firebase</span>
                     </div>
                 </section>
             </section>

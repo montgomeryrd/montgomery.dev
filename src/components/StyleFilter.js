@@ -1,9 +1,7 @@
-import '../css-components/Bauhaus/Bauhaus.css';
-
-const StyleFilter = ({ theme, setTheme}) => {
+const StyleFilter = ({ theme, setTheme }) => {
 
     return (
-        <nav className={theme}>
+        <nav id="style-filter" className={theme}>
             <ul>
                 <li onClick={() => {setTheme('bauhaus')}}>
                     <span>Bauhaus</span>
@@ -26,7 +24,7 @@ const StyleFilter = ({ theme, setTheme}) => {
                 <li onClick={() => {setTheme('big-bold')}}>
                     <span>Big Bold Typography</span>
                 </li>
-                <li onClick={() => {setTheme('3d-elements')}}>
+                <li onClick={() => {setTheme('three-d-elements')}}>
                     <span>3D Elements</span>
                 </li>
             </ul>
