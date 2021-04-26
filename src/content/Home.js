@@ -1,58 +1,7 @@
-import { useEffect, useState } from 'react';
-
-import Bauhaus from '../css-components/Bauhaus/Bauhaus';
-import '../css-components/Bauhaus/Bauhaus.css';
-import OnWhite from '../css-components/OnWhite/OnWhite';
-import '../css-components/OnWhite/OnWhite.css';
-import Colorless from '../css-components/Colorless/Colorless';
-import '../css-components/Colorless/Colorless.css';
-import Glassmorphism from '../css-components/Glassmorphism/Glassmorphism';
-import '../css-components/Glassmorphism/Glassmorphism.css';
-import DarkMode from '../css-components/DarkMode/DarkMode';
-import '../css-components/DarkMode/DarkMode.css';
-import Immersive from '../css-components/Immersive/Immersive';
-import '../css-components/Immersive/Immersive.css';
-import BigBold from '../css-components/BigBold/BigBold';
-import '../css-components/BigBold/BigBold.css';
-import ThreeD from '../css-components/ThreeD/ThreeD';
-import '../css-components/ThreeD/ThreeD.css';
-
 const Home = ({ theme }) => {
-    const [page, setPage] = useState('');
-
-    useEffect(() => {
-        switch(theme) {
-            case 'bauhaus':
-                setPage(<Bauhaus />);
-                return;
-            case 'on-white':
-                setPage(<OnWhite />);
-                return;
-            case 'colorless':
-                setPage(<Colorless />);
-                return;
-            case 'glassmorphism':
-                setPage(<Glassmorphism />);
-                return;
-            case 'dark-mode':
-                setPage(<DarkMode />);
-                return;
-            case 'immersive':
-                setPage(<Immersive />);
-                return;
-            case 'big-bold':
-                setPage(<BigBold />);
-                return;
-            case 'three-d-elements':
-                setPage(<ThreeD />);
-                return;
-            default: break;
-        }
-    }, [theme]);
 
     return (
-        <main id="home-container" className={theme} role="main">
-            {page}
+        <main id="home-container" className={`${theme}-home`} role="main">
             <section className="home-jumbotron">
                 <section className="home-information">
                     <h1>Richard Montgomery</h1>

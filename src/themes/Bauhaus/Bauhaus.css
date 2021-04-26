@@ -1,0 +1,126 @@
+/* Home Page */
+
+.bauhaus-container {
+    background: #fffeed;    
+}
+
+.one-page-flex-row {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.bauhaus-home {
+    position: relative;
+    width: 700px;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    border: 1px solid red;
+}
+
+.bauhaus-home .home-jumbotron {
+    position: relative;
+    margin-left: 150px;
+    font-family: var(--poppins);
+    transform: rotate(-45deg);
+}
+
+.bauhaus-home .home-jumbotron .home-information h1 {
+    font-family: var(--antonio);
+    font-size: 60px;
+    padding: 30px 0;
+    border-top: 10px solid var(--bauhausRed);
+    border-bottom: 10px solid var(--bauhausRed);
+}
+
+.bauhaus-home .home-jumbotron .home-information h2 {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--bauhausRed);
+}
+
+.bauhaus-home .home-jumbotron .home-information h3 {
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.bauhaus-home .home-jumbotron .home-information a {
+    position: absolute;
+    color: var(--bauhausRed);
+    text-decoration: none;
+    transform: rotate(90deg);
+    top: -140px;
+    left: 10px;
+    line-height: 2.2em;
+}
+
+.bauhaus-home .home-jumbotron .home-information a .home-location-1 i {
+    padding-right: 10px;
+    margin-top: 6px;
+    transform: scale(1.2);
+}
+
+.bauhaus-home .home-jumbotron .home-information a .home-location-1 {
+    display: flex;
+    font-size: 1.2em;
+    color: var(--bauhausRed);
+    margin: 0 0 0 -20px;
+}
+
+.bauhaus-home .home-jumbotron .home-information a .home-location-2 {
+    font-size: 3em;
+    color: var(--bauhausRed);
+    margin: 0 0 0 -120px;
+}
+
+.bauhaus-home .home-jumbotron .home-contact-links {
+    position: absolute;
+    transform: rotate(90deg);
+    top: -140px;
+    left: -80px;
+}
+
+.bauhaus-home .home-jumbotron .home-contact-links a {
+    font-size: 3em;
+    padding: 10px;
+    color: black;
+}
+
+.bauhaus-home .home-jumbotron .tech-stack-container {    
+    position: absolute;
+    top: 160px;
+}
+
+.bauhaus-home .home-jumbotron .tech-stack-container .title {
+    font-size: 2.4em;
+}
+
+.bauhaus-home .home-jumbotron .tech-stack-container .stack {
+    transform: rotate(90deg);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bauhaus-home .home-jumbotron .tech-stack-container .stack .item:nth-child(1),
+.bauhaus-home .home-jumbotron .tech-stack-container .stack .item:nth-child(2),
+.bauhaus-home .home-jumbotron .tech-stack-container .stack .item:nth-child(3) {
+    color: var(--bauhausRed);
+}
+ 
+.bauhaus-home .home-jumbotron .tech-stack-container .stack .item {
+    font-size: 1.1em;
+}
+ 
+
+/* About */
+.bauhaus-about {
+    min-width: 300px;
+}
+
+.bauhaus-projects {
+    min-width: 300px;
+}

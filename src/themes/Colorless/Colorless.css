@@ -1,0 +1,123 @@
+/* Colorless BG Styles */
+
+.one-page-flex-row {
+    overflow: hidden;
+}
+
+.colorless-bg-1 {
+    transform: skew(.8rad, -.6rad);
+}
+
+.colorless-1, .colorless-2, .colorless-3, .colorless-4 {
+    font-family: var(--colorless);
+    font-size: 2em;
+    transform: skew(.6rad, -.6rad);
+}
+
+.colorless-1 {
+    position: absolute;
+}
+
+.colorless-2 {
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+}
+
+.colorless-3 {
+    position: absolute;
+    top: 40vh;
+    left: -10vw;
+}
+
+.colorless-4 {
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+}
+
+/* Home Page */
+.colorless-home {
+    position: relative;
+    display: grid;
+    place-content: center;
+}
+
+.colorless-home .home-jumbotron {
+    position: relative;
+    display: grid;
+    place-content: center;
+    font-family: var(--poppins);
+    width: 80vw;
+    height: 100vh;
+}
+
+.colorless-home .home-jumbotron .home-information h1 {
+    position: absolute;
+    font-family: var(--antonio);
+    font-size: 60px;
+}
+
+.colorless-home .home-jumbotron .home-information h2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.colorless-home .home-jumbotron .home-information h3 {
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.colorless-home .home-jumbotron .home-information a {
+    text-decoration: none;
+    line-height: 2.2em;
+    color: black;
+}
+
+.colorless-home .home-jumbotron .home-information a .home-location-1 i {
+    
+}
+
+.colorless-home .home-jumbotron .home-information a .home-location-1 {
+    display: flex;
+    font-size: 1.2em;
+}
+
+.colorless-home .home-jumbotron .home-information a .home-location-2 {
+    font-size: 3em;
+}
+
+.colorless-home .home-jumbotron .home-contact-links {
+
+}
+
+.colorless-home .home-jumbotron .home-contact-links a {
+    font-size: 3em;
+    padding: 10px;
+    color: black;
+}
+
+.colorless-home .home-jumbotron .tech-stack-container {    
+    
+}
+
+.colorless-home .home-jumbotron .tech-stack-container .title {
+    font-size: 2.4em;
+}
+
+.colorless-home .home-jumbotron .tech-stack-container .stack {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.colorless-home .home-jumbotron .tech-stack-container .stack .item:nth-child(1),
+.colorless-home .home-jumbotron .tech-stack-container .stack .item:nth-child(2),
+.colorless-home .home-jumbotron .tech-stack-container .stack .item:nth-child(3) {
+ 
+}
+ 
+.colorless-home .home-jumbotron .tech-stack-container .stack .item {
+    font-size: 1.1em;
+}

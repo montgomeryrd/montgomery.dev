@@ -1,6 +1,4 @@
-import '../css-components/Bauhaus/Bauhaus.css';
-
-const StyleFilter = ({ theme, setTheme}) => {
+const StyleFilter = ({ theme, setTheme }) => {
 
     return (
         <nav id="style-filter" className={theme}>

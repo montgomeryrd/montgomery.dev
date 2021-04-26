@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Colorless = () => {
+const OnWhite = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Colorless = () => {
     )
 }
 
-export default Colorless;
+export default OnWhite
