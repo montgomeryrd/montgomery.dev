@@ -4,7 +4,7 @@ const Home = ({ theme }) => {
         <main id="home-container" className={`${theme}-home`} role="main">
             <section className="home-jumbotron">
                 <section className="home-information">
-                    <h1>Richard Montgomery</h1>
+                    <h1>Richard Montgom<span className="invert">ery</span></h1>
                     <h2>Software</h2>
                     <h3>Developer</h3>
                     <a href="https://www.google.com/maps/place/Kitsap+County,+WA/@47.6866071,-123.2897091,9z/data=!4m5!3m4!1s0x54904f05579719ab:0xf361976886df6ce5!8m2!3d47.6476607!4d-122.6412583" target="_blank" rel="noreferrer">

@@ -1,104 +1,149 @@
 /* Colorless BG Styles */
 
-.one-page-flex-row {
-    overflow: hidden;
-}
-
-.colorless-bg-1 {
-    transform: skew(.8rad, -.6rad);
-}
-
 .colorless-1, .colorless-2, .colorless-3, .colorless-4 {
+    position: absolute;
     font-family: var(--colorless);
     font-size: 2em;
     transform: skew(.6rad, -.6rad);
 }
 
 .colorless-1 {
-    position: absolute;
+    opacity: .8;
 }
 
 .colorless-2 {
-    position: absolute;
-    top: 15vh;
-    left: 5vw;
+    top: 100px;
+    left: 50px;
+    opacity: .6;
 }
 
 .colorless-3 {
-    position: absolute;
-    top: 40vh;
-    left: -10vw;
+    top: 400px;
+    left: -150px;
+    opacity: .4;
 }
 
 .colorless-4 {
-    position: absolute;
-    top: 50vh;
-    left: 10vw;
+    top: 450px;
+    left: 200px;
+    opacity: .2;
 }
 
 /* Home Page */
-.colorless-home {
-    position: relative;
-    display: grid;
-    place-content: center;
+.colorless-main {
+    position: absolute;
+    left: 200px;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+}
+
+.left-bar {
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    width: 5px;
+    background: black;
+}
+
+.right-bar {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 5px;
+    background: black;
 }
 
 .colorless-home .home-jumbotron {
     position: relative;
-    display: grid;
-    place-content: center;
+    margin-top: 100px;
     font-family: var(--poppins);
     width: 80vw;
-    height: 100vh;
+}
+
+.colorless-home .home-jumbotron .home-information {
+    background: black;
+    height: 300px;
+    width: 335px;
+    padding-left: 40px;
 }
 
 .colorless-home .home-jumbotron .home-information h1 {
     position: absolute;
     font-family: var(--antonio);
-    font-size: 60px;
+    color: white;
+    width: 400px;
+    font-size: 80px;
+    margin-top: 40px;
+}
+
+.colorless-home .home-jumbotron .home-information .invert {
+    color: black;
 }
 
 .colorless-home .home-jumbotron .home-information h2 {
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    font-size: 1.6em;
+    top: 310px;
+    left: 20px;
 }
 
 .colorless-home .home-jumbotron .home-information h3 {
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    font-size: 1.6em;
+    top: 310px;
+    left: 140px;
 } 
 
 .colorless-home .home-jumbotron .home-information a {
+    position: absolute;
+    left: 200px;
     text-decoration: none;
     line-height: 2.2em;
     color: black;
 }
 
 .colorless-home .home-jumbotron .home-information a .home-location-1 i {
-    
+    margin-top: 8px;
+    padding-right: 3px;
+    color: black;
 }
 
 .colorless-home .home-jumbotron .home-information a .home-location-1 {
     display: flex;
+    justify-content: flex-end;
+    margin-top: 450px;
     font-size: 1.2em;
 }
 
 .colorless-home .home-jumbotron .home-information a .home-location-2 {
+    display: flex;
+    justify-content: flex-end;
     font-size: 3em;
 }
 
 .colorless-home .home-jumbotron .home-contact-links {
-
+    position: absolute;
+    bottom: -700px; 
+    width: 500px;
+    background: black;
+    padding: 10px;
 }
 
 .colorless-home .home-jumbotron .home-contact-links a {
     font-size: 3em;
     padding: 10px;
-    color: black;
+    color: white;
+    background: black;
 }
 
 .colorless-home .home-jumbotron .tech-stack-container {    
-    
+    position: absolute;
+    top: 550px;
+    left: 205px;
+    background: black;
+    padding: 20px 50px 20px 20px;
+    color: white;
 }
 
 .colorless-home .home-jumbotron .tech-stack-container .title {
