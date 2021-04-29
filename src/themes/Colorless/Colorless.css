@@ -1,123 +1,134 @@
 /* Colorless BG Styles */
 
-.one-page-flex-row {
-    overflow: hidden;
-}
-
-.colorless-bg-1 {
-    transform: skew(.8rad, -.6rad);
-}
-
 .colorless-1, .colorless-2, .colorless-3, .colorless-4 {
+    position: absolute;
     font-family: var(--colorless);
     font-size: 2em;
     transform: skew(.6rad, -.6rad);
 }
 
 .colorless-1 {
-    position: absolute;
+    margin-top: -5vh;
+    right: 5vw;
+    opacity: .2;
 }
 
 .colorless-2 {
-    position: absolute;
-    top: 15vh;
-    left: 5vw;
+    margin-top: 15vh;
+    right: 10vw;
+    opacity: .35;
 }
 
 .colorless-3 {
-    position: absolute;
-    top: 40vh;
-    left: -10vw;
+    margin-top: 35vh;
+    right: 0;
+    opacity: .5;
 }
 
 .colorless-4 {
-    position: absolute;
-    top: 50vh;
-    left: 10vw;
+    margin-top: 30vh;
+    right: 0;
+    opacity: .8;
 }
 
 /* Home Page */
-.colorless-home {
+.colorless-container {
     position: relative;
-    display: grid;
-    place-content: center;
-}
-
-.colorless-home .home-jumbotron {
-    position: relative;
-    display: grid;
-    place-content: center;
-    font-family: var(--poppins);
-    width: 80vw;
+    overflow: scroll;
+    width: 100vw;
     height: 100vh;
 }
 
-.colorless-home .home-jumbotron .home-information h1 {
-    position: absolute;
+.colorless-home {
+    background: black;
+    min-height: 450px;
+    width: 100%;
+    height: 650px;
+}
+
+.colorless-home .home-jumbotron {
+    color: white;
     font-family: var(--antonio);
-    font-size: 60px;
+    width: 600px;
+}
+
+.colorless-home .home-jumbotron .home-information h1 {
+    font-size: 6em;
+    padding-top: 200px;
+    margin-left: 5vw;
+}
+
+.colorless-home .home-jumbotron .home-information .title {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 5vw;
+    font-family: var(--poppins);
 }
 
 .colorless-home .home-jumbotron .home-information h2 {
-    display: flex;
-    justify-content: flex-end;
+    font-size: 30px;
 }
 
 .colorless-home .home-jumbotron .home-information h3 {
-    display: flex;
-    justify-content: flex-end;
+    margin-left: 10px;
+    font-size: 30px;
 } 
 
 .colorless-home .home-jumbotron .home-information a {
     text-decoration: none;
-    line-height: 2.2em;
-    color: black;
+    font-family: var(--poppins);
+    color: white;
 }
 
 .colorless-home .home-jumbotron .home-information a .home-location-1 i {
-    
-}
-
-.colorless-home .home-jumbotron .home-information a .home-location-1 {
-    display: flex;
-    font-size: 1.2em;
+    padding-right: 5px;
+    margin-left: 5vw;
+    margin-top: 5px;
 }
 
 .colorless-home .home-jumbotron .home-information a .home-location-2 {
-    font-size: 3em;
+    padding-left: 5px;
 }
 
 .colorless-home .home-jumbotron .home-contact-links {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100vw;
 }
 
 .colorless-home .home-jumbotron .home-contact-links a {
-    font-size: 3em;
-    padding: 10px;
-    color: black;
+    color: white;
+    padding: 0 70px;
+    transform: scale(5);
 }
 
 .colorless-home .home-jumbotron .tech-stack-container {    
-    
+    margin-left: 5vw;
+    margin-top: 100px;
+    color: black;
+    font-family: var(--poppins);
 }
 
 .colorless-home .home-jumbotron .tech-stack-container .title {
-    font-size: 2.4em;
+    font-size: 3em;
 }
 
 .colorless-home .home-jumbotron .tech-stack-container .stack {
-    
+    font-size: 1.2em;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 280px;
 }
 
-.colorless-home .home-jumbotron .tech-stack-container .stack .item:nth-child(1),
-.colorless-home .home-jumbotron .tech-stack-container .stack .item:nth-child(2),
-.colorless-home .home-jumbotron .tech-stack-container .stack .item:nth-child(3) {
- 
-}
- 
 .colorless-home .home-jumbotron .tech-stack-container .stack .item {
-    font-size: 1.1em;
+    padding: 5px 9px;
+    border-radius: 20em;
+    margin: 3px;
+}
+
+.laptop-2-screen {
+    display: none;
 }
