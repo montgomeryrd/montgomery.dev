@@ -3,7 +3,7 @@
 .colorless-1, .colorless-2, .colorless-3, .colorless-4 {
     position: absolute;
     font-family: var(--colorless);
-    font-size: 2em;
+    font-size: 2rem;
     transform: skew(.6rad, -.6rad);
 }
 
@@ -41,9 +41,8 @@
 
 .colorless-home {
     background: black;
-    min-height: 450px;
+    height: 55vh;
     width: 100%;
-    height: 650px;
 }
 
 .colorless-home .home-jumbotron {
@@ -53,8 +52,8 @@
 }
 
 .colorless-home .home-jumbotron .home-information h1 {
-    font-size: 6em;
-    padding-top: 200px;
+    font-size: 6rem;
+    padding-top: 2em;
     margin-left: 5vw;
 }
 
@@ -83,7 +82,7 @@
 
 .colorless-home .home-jumbotron .home-information a .home-location-1 i {
     padding-right: 5px;
-    margin-left: 5vw;
+    margin-left: 5.1vw;
     margin-top: 5px;
 }
 
@@ -99,9 +98,10 @@
 }
 
 .colorless-home .home-jumbotron .home-contact-links a {
-    color: white;
-    padding: 0 70px;
     transform: scale(5);
+    color: white;
+    margin: 0 100px 0 0;
+    cursor: pointer;
 }
 
 .colorless-home .home-jumbotron .tech-stack-container {    
@@ -124,9 +124,8 @@
 }
 
 .colorless-home .home-jumbotron .tech-stack-container .stack .item {
-    padding: 5px 9px;
     border-radius: 20em;
-    margin: 3px;
+    margin: 10px 20px 10px 0;
 }
 
 .laptop-2-screen {
